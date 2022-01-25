@@ -1,5 +1,5 @@
 network=${network:-testnet}
-accountId=${accountId:-account.testnet}
+accountId=${accountId:-requester.blockwave.testnet}
 oracle=${oracle:-09.oracle.flux-dev}
 paymentToken=${paymentToken:-v2.wnear.flux-dev}
 

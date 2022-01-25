@@ -2,16 +2,16 @@
 
 # default params
 network=${network:-testnet}
-accountId=${accountId:-flux-dev}
-master=${master:-flux-dev}
-initialBalance=${initialBalance:-5}
+accountId=${accountId:-requester.blockwave.testnet}
+master=${master:-blockwave.testnet}
+initialBalance=${initialBalance:-10}
 
 while [ $# -gt 0 ]; do
 
    if [[ $1 == *"--"* ]]; then
         param="${1/--/}"
         declare $param="$2"
-        # echo $1 $2 // Optional to see the parameter:value result
+        echo $1 $2
    fi
 
   shift
